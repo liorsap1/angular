@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app = "hamus">
+<head>
+    <meta charset="UTF-8">
+    <title>hamos animal</title>
+    <link href="style.css" rel="stylesheet"/>
+
+</head>
+<body ng-controller = "hamusController as hamus">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<h1>החמוסים שלי</h1>
+
+<nav id="nav" ng-init = "tab = 1">
+    <ul>
+        <a href ng-click = "tab = 1"><li > איך לגדל חמוס </li></a>
+        <a href ng-click = "tab = 2"><li > משפחת החמוסים </li></a>
+        <a href ng-click = "tab = 3"><li > החמוס שלי </li></a>
+    </ul>
+</nav>
+<div class = "panel2" ng-show="tab === 3">
+
+    <img ng-src="{{hamus.products[0].images}}" />
+    <img ng-src="{{hamus.products[1].images}}" />
+
+</div>
+<div class = "panel1" ng-show="tab === 2">
+    <p>מידע על חמוסים</p>
+    {{hamus.products[0].data}}
+    <p/>
+    <a href=https://he.wikipedia.org/wiki/%D7%97%D7%9E%D7%95%D7%A1"> עוד קצת על חמוסים הקלק עלי</a>
+</div>
+<div class = "panel1" ng-show="tab === 1">
+    {{hamus.products[1].data}}
+</div>
+</body>
+</html>

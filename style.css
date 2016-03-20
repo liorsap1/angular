@@ -1,0 +1,55 @@
+.header {
+
+}
+nav{
+    width: 900px;
+    background: #45c9ff;
+    background: #45c9ff;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 73px;
+
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+#nav li{
+    list-style-type: none;
+    color: #74ff87;
+    font-size: 120%;
+    font-family: Poiret One;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    transition: ease 0.65s;
+    padding: 2.5%;
+    display: inline-block;
+}
+#nav li:hover{
+    color: #63CBE4;
+    cursor: pointer;
+    transition: ease 0.65s;
+    background-color: #212121;
+    padding-bottom: 29px;
+}
+.panel1 {
+    text-align: right;
+    width: 900px;
+   margin: 0px auto;
+    font-size: 20px;
+}
+.panel2{
+    text-align: center;
+    margin: 0px auto;
+}
+.panel1 text {
+    font-family: "Times New Roman", Times, serif;
+}
+body {
+    background-color: azure;
+}
